@@ -6,14 +6,14 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var express = require('express');
+var express = require("express");
 
-var geocode = require('../utils/geocode');
+var geocode = require("../utils/geocode");
 
-var forecast = require('../utils/forecast');
+var forecast = require("../utils/forecast");
 
 var router = new express.Router();
-router.get('/weather/:city', function _callee(req, res) {
+router.get("/weather/:city", function _callee(req, res) {
   var city, _ref, longitude, latitude, wetaherData;
 
   return regeneratorRuntime.async(function _callee$(_context) {
